@@ -4,7 +4,6 @@
 
 **Steven Paul Jobs.**
 
-
-This project start from May 31, 2023.
+This project starts from May 31, 2023.
 
 For ML - DL : NLP / CV / LLM Advanced
