@@ -495,14 +495,198 @@ print("-------------------------------------")
 
 x1 = np.arange(1, 6)
 x2 = np.arange(6, 11)
+print(x1)
+print(x2)
 print("x1+x2=\n", x1+x2)
 print("x1-x2=\n", x1-x2)
 print("x1*x2=\n", x1*x2)
 print("x1/x2=\n", x1/x2)
 
+print("-------------------------------------")
 
+# 矩阵运算
+x = np.arange(9).reshape(3, 3)
+print(x)
 
+# 矩阵的转置
+y = x.T
+print(y)
 
+print("-------------------------------------")
 
+# 矩阵乘法
+x = np.array([[1, 0],
+             [1, 1]])
+y = np.array([[0, 1],
+             [1, 1]])
+print(x.dot(y))
+print(np.dot(x, y))
+print(y.dot(x))
+print(np.dot(y, x))
+# 注意跟x*y的区别
+print(x * y)
 
+print("-------------------------------------")
 
+# 广播运算
+x = np.arange(3).reshape(1, 3)
+print(x)
+print(x+5)
+
+# 如果两个数组的形状在维度上不匹配
+# 那么数组的形式会沿着维度为1的维度进行扩展以匹配另一个数组的形状。
+x1 = np.ones((3,3))
+print(x1)
+x2 = np.arange(3).reshape(1, 3)
+print(x2)
+print(x1+x2)
+x3 = np.logspace(1, 10, 10, base=2).reshape(2, 5)
+print(x3)
+x4 = np.array([[1, 2, 4, 8, 16]])
+print(x4)
+print(x3/x4)
+x5 = np.arange(3).reshape(3, 1)
+print(x5)
+x6 = np.arange(3).reshape(1, 3)
+print(x6)
+print(x5+x6)
+
+print("-------------------------------------")
+
+# 比较运算和掩码
+
+# 比较运算
+x1 = np.random.randint(100, size=(10,10))
+print(x1)
+# 每个单位都进行比较
+print(x1 > 50)
+
+print("-------------------------------------")
+
+# 操作布尔数组
+x2 = np.random.randint(10, size=(3, 4))
+print(x2)
+print(x2 > 5)
+print(np.sum(x2 > 5))
+print(np.all(x2 > 0))
+print(np.any(x2 == 6))
+print(np.all(x2 < 9, axis=1))   # 按行进行判断
+print((x2 < 9) & (x2 >5))
+print(np.sum((x2 < 9) & (x2 >5)))
+
+print("-------------------------------------")
+
+# 将布尔数组作为掩码
+print(x2)
+print(x2 > 5)
+print(x2[x2 > 5]) # 几个大于 5 值为 True 的列入数组
+
+print("-------------------------------------")
+
+# 花哨的索引
+# 一维数组
+x = np.random.randint(100, size=10)
+print(x)
+# 注意：结果的形状与索引数组ind一致
+ind = [2, 6, 9]
+print(x[ind])
+ind = np.array([[1, 0],
+               [2, 3]])
+print(x[ind])
+
+print("-------------------------------------")
+
+# 多维数组
+x = np.arange(12).reshape(3, 4)
+print(x)
+row = np.array([0, 1, 2])
+col = np.array([1, 3, 0])
+print(x[row, col])
+print(row[:, np.newaxis]) # 列向量
+print(col[np.newaxis, :])   # 列向量转为行向量
+print(row[np.newaxis, :], col) # 广播机制
+
+print("-------------------------------------")
+
+# 数值排序
+x = np.random.randint(20, 50, size=10)
+print(x)
+x1 = np.sort(x)
+print(x1)
+# 不会改变原来的矩阵
+print(x)
+
+x2 = x.sort()
+# 无返回值，且会改变原来的矩阵
+print(x)
+
+print("-------------------------------------")
+
+# 获得排序索引
+x = np.random.randint(20, 50, size=10)
+print(x)
+# 获得排序以后的位置
+i = np.argsort(x)
+print(i)
+
+print("-------------------------------------")
+
+# 最大最小值
+x = np.random.randint(20, 50, size=10)
+print(x)
+print("max:", np.max(x))
+print("min:", np.min(x))
+print("max_index:", np.argmax(x))
+print("min_index:", np.argmin(x))
+
+print("-------------------------------------")
+
+# 数值求和，求积
+x = np.arange(1,6)
+print(x)
+print(x.sum())
+print(np.sum(x))
+x1 = np.arange(6).reshape(2,3)
+print(x1)
+# 按行求和
+print(np.sum(x1, axis=1))
+# 按列求和
+print(np.sum(x1, axis=0))
+# 全体求和
+print(np.sum(x1))
+
+print("-------------------------------------")
+
+# 全体求积
+print(x)
+print(x.prod())
+print(np.prod(x))
+
+print("-------------------------------------")
+
+# 中位数、均值、方差、标准差
+x = np.random.normal(0, 1, size=10000)
+print(x)
+import matplotlib.pyplot as plt
+
+plt.hist(x, bins=50)
+plt.show()
+"""
+上述代码将绘制变量 'x' 中存储的数据的直方图，使用50个条形箱进行分组。
+最终的图形将使用 'plt.show()' 命令显示出来。
+"""
+
+# 中位数
+print(np.median(x))
+
+# 均值
+print(np.mean(x))
+print(x.mean())
+
+# 方差
+print(x.var())
+print(np.var(x))
+
+# 标准差
+print(x.std())
+print(np.std(x))
