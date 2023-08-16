@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/sdl2/lib -lSDL CMakeFiles/C__.dir/main.cpp.o CMakeFiles/C__.dir/io_scanf.cpp.o CMakeFiles/C__.dir/queue14.cpp.o -o C__ 
