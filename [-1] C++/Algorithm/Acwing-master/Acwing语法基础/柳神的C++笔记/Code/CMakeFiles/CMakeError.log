@@ -1,0 +1,23 @@
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/labixiaoxin/Desktop/912🌊/CS912_NLP/C++BASIC/柳神的C++笔记/Code/CMakeFiles/CMakeScratch/TryCompile-wo3Btu
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5d4e8/fast && xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/labixiaoxin/Desktop/912🌊/CS912_NLP/C++BASIC/柳神的C++笔记/Code/CMakeFiles/CMakeScratch/TryCompile-EmoA9p
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d9374/fast && xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+
+
+

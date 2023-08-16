@@ -1,0 +1,3 @@
+/Users/labixiaoxin/Desktop/912🌊/CS912_NLP/C++BASIC/柳神的C++笔记/Code/CMakeFiles/C__.dir
+/Users/labixiaoxin/Desktop/912🌊/CS912_NLP/C++BASIC/柳神的C++笔记/Code/CMakeFiles/edit_cache.dir
+/Users/labixiaoxin/Desktop/912🌊/CS912_NLP/C++BASIC/柳神的C++笔记/Code/CMakeFiles/rebuild_cache.dir
