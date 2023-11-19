@@ -1,2 +1,0 @@
-# Acwing
-For Algorithm Advanced.
