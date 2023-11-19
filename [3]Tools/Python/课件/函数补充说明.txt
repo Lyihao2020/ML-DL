@@ -1,0 +1,1 @@
+*args  **kwargs 只是一种形式，可以将args   kwargs替换成合法的变量名
