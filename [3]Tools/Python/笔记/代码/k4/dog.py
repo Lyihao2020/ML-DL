@@ -12,3 +12,7 @@ class Dog():
     def roll_over(self):
         print(f'{self.name.title()} rolled over!')
 
+if __name__ == '__main__':
+    my_dog = Dog('william', 6)
+    my_dog.sit()
+    my_dog.roll_over()
