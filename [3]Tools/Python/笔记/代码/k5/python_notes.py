@@ -23,3 +23,8 @@ if __name__ == '__main__':
     for python_string in python_strings:
         python_string.replace('Python', 'C++')  # Python replace 临时变换不是永久变换
         print(python_string)  # 不手动添加换行符
+
+    print('-----------------------------------')
+    for i in range(len(python_strings)):
+        python_strings[i] = python_strings[i].replace('Python', 'C++')  # 永久变换
+        print(python_strings[i])  # 不手动添加换行符
