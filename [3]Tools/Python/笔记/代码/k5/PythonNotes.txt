@@ -1,0 +1,10 @@
+In Python, you can easily manipulate strings using built-in functions like `upper()` and `lower()`.
+In Python, you can create a list comprehension to generate a new list based on existing ones.
+In Python, you can handle exceptions using the `try`, `except`, and `finally` blocks.
+In Python, you can define a class with methods and attributes to model real-world entities.
+In Python, you can use the `open()` function to read and write files.
+In Python, you can iterate through a sequence using a `for` loop and make use of the `range()` function.
+In Python, you can install external libraries easily using package managers like `pip`.
+In Python, you can create a virtual environment to manage project dependencies.
+In Python, you can perform mathematical operations using built-in operators like `+, -, *, /`.
+In Python, you can use the `input()` function to get user input interactively in a console application.
