@@ -43,8 +43,10 @@ if __name__ == '__main__':
     plt.colorbar(sm, label='Walk Progression')
 
     # Marking the start and end points
-    plt.scatter(rw.x_values[0], rw.y_values[0], c='green', edgecolors='none', s=30)
-    plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=30)
+    # The scatter plots appear behind the lines. To place them on top of the lines, we can use the zorderargument.
+    # Plot elements with higher zorder values are placed on top of elements with lowerzorder values.
+    plt.scatter(rw.x_values[0], rw.y_values[0], c='green', edgecolors='none', s=60, zorder=2)
+    plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=60, zorder=2)
 
     # Annotating the start point
     plt.annotate('Start', xy=(rw.x_values[0], rw.y_values[0]), xytext=(20, -20),
