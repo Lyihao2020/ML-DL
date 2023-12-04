@@ -13,6 +13,10 @@ if __name__ == '__main__':
         rw = RandomWalk()
         rw.fill_walk()
 
+        # 设置绘图窗口的尺寸: 用于指定图标的宽度，高度，分辨率和背景色
+        # 元组是绘图窗口的尺寸，单位是英寸, dpi是分辨率，更有效的利用可用的屏幕空间
+        plt.figure(dpi=128, figsize=(10, 6))
+
         point_numbers = list(range(rw.num_points))
         plt.scatter(rw.x_values, rw.y_values, c=point_numbers,
                     cmap=plt.cm.Blues, edgecolors='none', s=15)
